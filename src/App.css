@@ -1,0 +1,62 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.bg-cont {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  background-color: #eef4f7;
+  font-family: Roboto;
+}
+.heading {
+  display: inline;
+  border-bottom: #52bbf0 3px solid;
+  font-size: 23px;
+  color: #334155;
+  padding-bottom: 10px;
+}
+.loader-details {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 80vh;
+}
+.travels-list {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  list-style-type: none;
+  padding: 0;
+}
+.image-style {
+  width: 100%;
+}
+.name {
+  color: #475569;
+  padding-left: 5px;
+}
+.des {
+  color: #64748b;
+  padding-left: 5px;
+}
+@media (max-width: 768px) {
+  .travels-list {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+  }
+}
